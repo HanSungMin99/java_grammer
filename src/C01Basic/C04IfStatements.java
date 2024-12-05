@@ -51,10 +51,10 @@ public class C04IfStatements {
 //        String result = answer == input ?  "문이 열렸습니다." : "비밀번호가 틀렸습니다." ;
 //        System.out.println(result);
 
-        //switch문: if, else if 등의 조건문을 가독성있게 표현 구문
-        System.out.println("원하시는 서비스 번호를 입력해주세요");
-        Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
+//        //switch문: if, else if 등의 조건문을 가독성있게 표현 구문
+//        System.out.println("원하시는 서비스 번호를 입력해주세요");
+//        Scanner sc = new Scanner(System.in);
+//        int number = sc.nextInt();
 //        //if-else로 풀기
 //        if(number == 1){
 //            System.out.println("대출업무입니다.");
@@ -65,23 +65,23 @@ public class C04IfStatements {
 //        } else if(number == 3){
 //            System.out.println("상담사연결입니다.");
 //        }
-        //switch구문으로 풀기
-        switch (number){
-            case 1:
-                System.out.println("대출업무입니다.");
-                break;
-            case 2:
-                System.out.println("예금업무입니다.");
-                break;
-            case 3:
-                System.out.println("적금업무입니다.");
-                break;
-            case 0:
-                System.out.println("상담사연결입니다.");
-                break;
-            default:
-                System.out.println("잘못된 입력입니다.");
-                break;
-        }
+//        //switch구문으로 풀기
+//        switch (number){
+//            case 1:
+//                System.out.println("대출업무입니다.");
+//                break;
+//            case 2:
+//                System.out.println("예금업무입니다.");
+//                break;
+//            case 3:
+//                System.out.println("적금업무입니다.");
+//                break;
+//            case 0:
+//                System.out.println("상담사연결입니다.");
+//                break;
+//            default:
+//                System.out.println("잘못된 입력입니다.");
+//                break;
+//        }
     }
 }
