@@ -265,8 +265,20 @@ public class C05LoopStatements {
 //            }
 //        }
 
-        //100~200까지 수 중에서 가장 작은 소수를 출력
-
+//        //100~200까지 수 중에서 가장 작은 소수를 출력
+//        for(int input=100; input<=200; input++){
+//            boolean answer=false;
+//            for(int i=2; i*i<=input;i++){
+//                if(input % i == 0){
+//                    answer = true;
+//                    break;
+//                }
+//            }
+//            if(!answer){
+//                System.out.println(input);
+//                break;
+//            }
+//        }
 
 
 
