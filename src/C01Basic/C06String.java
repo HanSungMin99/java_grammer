@@ -340,6 +340,33 @@ public class C06String {
 //        System.out.println(answer3);
 
 
-        //프로그래머스 - 문자열 밀기
+//        //프로그래머스 - 문자열 밀기
+//        String A = "hello";
+//        String B = "ohell";
+//        int answer = -1;
+//        if(A.equals(B)){
+//            answer = 0;
+//        }else {
+//            int count = 0;
+//            StringBuilder sb = new StringBuilder(A);
+//            for(int i=A.length()-1; i>=0; i--){
+//                sb.insert(0, A.charAt(i));
+//                sb.deleteCharAt(sb.length()-1);
+//                //sb.delete(sb.length()-1, sb.length()) //delete로 하려면 이렇게 해야 한다.
+//                count++;
+//                if(sb.toString().equals(B)){
+//                    answer = count;
+//                    break;
+//                }
+//            }
+//        }
+//        System.out.println(answer);
+
+        //StringBuilder의 사용이 더 성능이 좋음, 사용방법 비교
+        for(int i=0; i<10; i++){
+            System.out.println("hello world");
+        }
+
+
     }
 }
