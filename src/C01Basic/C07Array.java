@@ -328,6 +328,5 @@ public class C07Array {
 //                }
 //                return answer;
 //            }
-        }
     }
 }
