@@ -240,8 +240,94 @@ public class C07Array {
 //        System.out.println(Arrays.toString(answer1));
 //        System.out.println(Arrays.toString(answer2));
 
-        //프로그래머스-두 개 뽑아서 더하기
-        int[] numbers = {2, 1, 3, 4, 1};
+//        //프로그래머스-두 개 뽑아서 더하기
+//
+//        //배열의 검색
+//        int[] arr = {5, 3, 1, 8, 7};
+//        int target = 8;
+//        int answer = 0;
+//        for(int i = 0; i<arr.length; i++){
+//            if(arr[i]==target){
+//                answer = i;
+//                break;
+//            }
+//        }
+//        System.out.println(answer);
 
+//        //이진검색(binary search) - 이분 탐색
+//        //사전에 오름차순 정렬이 되어 있어야 이진 검색 가능
+//        //이진탐색으로 풀면 복잡도를 확 줄일 수 있다는 장점이 있다. 데이터량 많을 때 유용
+//        int[] arr = {1, 3, 6, 8, 9, 11, 15};
+//        System.out.println(Arrays.binarySearch(arr, 15));
+//
+//        //백준-수찾기 문제 풀어보기
+
+//        //배열간 비교
+//        int[] arr1 = {10, 20, 30};
+//        int[] arr2 = {10, 20, 30};
+//        System.out.println(arr1==arr2);
+//        //Arrays.equals: 값과 순서까지 동일해야 true
+//        System.out.println(Arrays.equals(arr1, arr2));
+
+//        //2차원 배열의 선언과 할당
+//        //선언 후 할당 방식
+//        int[][] arr1 = new int[2][3];
+//        arr1[0][0]=10;
+//        arr1[0][1]=20;
+//        arr1[0][2]=30;
+//        arr1[1][0]=40;
+//        arr1[1][1]=50;
+//        arr1[1][2]=60;
+//        //리터럴 세팅
+//        int[][] arr2 = {{10,20,30}, {40,50,60}};
+//        //가변배열 선언 후 할당
+//        int[][] arr3 = new int[2][];
+//        arr3[0] = new int[2]; // 길이를 새로 세팅해주어야 한다.(size) 결정해주어야 한다.
+//        arr3[1] = new int[3]; // 결국 값을 할당해주어야만 한다.
+//        arr3[0][0] = 10;
+//        arr3[0][1] = 20;
+//        arr3[1][0] = 30;
+//        arr3[1][1] = 40;
+//        arr3[1][2] = 50;
+//        System.out.println(Arrays.deepToString());//2차원 배열 출력하는 명령어
+//        //가변배열 리터럴 방식
+//        int[][] arr4 = {{10,20}, {30,40,50}};
+
+//        //[3][4] 사이즈 배열 선언하고
+//        //1 ~ 12까지 숫자값을 각 배열에 순차적으로 할당
+//        //{1,2,3,4}, {5,6,7,8}...
+//        //그냥 배열
+//        int[][] arr = new int[3][4];
+//        int number = 1;
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr[i].length; j++) {
+//                arr[i][j] = number;
+//                number++;
+//            }
+//        }
+//        //가변 배열
+//        int[][] arr = new int[3][];
+//        int num = 1;
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = new int[4];
+//            for (int j = 0; j<arr[i].length; j++){
+//                arr[i][j]=num;
+//                num++;
+//            }
+//        }
+//        System.out.println(Arrays.deepToString(arr));
+
+//        //프로그래머스 - 행렬의 덧셈
+//        class Solution {
+//            public int[][] solution(int[][] arr1, int[][] arr2) {
+//                int[][] answer = new int[arr1.length][arr1[0].length];
+//                for(int i=0; i<arr1.length; i++){
+//                    for(int j=0; j<arr1[i].length; j++){
+//                        answer[i][j] = arr1[i][j] + arr2[i][j];
+//                    }
+//                }
+//                return answer;
+//            }
+        }
     }
 }
