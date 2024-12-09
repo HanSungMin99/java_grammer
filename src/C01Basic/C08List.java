@@ -21,8 +21,8 @@ public class C08List {
 //        myList3.add("C++");
 //        //초기값 생성방법2: 배열을 리스트로 변환
 //        String[] arr = {"java", "python", "C++"};
-//        //초기값 생성방법3
-//        List<String> myList = new ArrayList<>(Arrays.asList(arr)); //  new ArrayList<>(arr); 은 안됨, 배열을 그냥 집어넣을 수 없음
+//        List<String> myList = new ArrayList<>(Arrays.asList(arr));
+//        //new ArrayList<>(arr); 은 안됨, 배열을 그냥 집어넣을 수 없음
 //        List<String> myList = Arrays.asList(arr); //이것도 가능
 //
 //        int[] intArr = {10, 20, 30, 40, 50};
