@@ -51,6 +51,7 @@ public class C08List {
 //        for(int i=0; i<myList.size(); i++){
 //            System.out.println(myList.get(i));
 //        }
+//        //for문 활용해 list의 값 하나씩 모두 출력(2)
 //        for(int a : myList){
 //            System.out.println(a);
 //        }
