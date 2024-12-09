@@ -51,8 +51,25 @@ public class C09Map {
 //        System.out.println(sports.containsKey("baseball"));
 //        System.out.println(sports.containsKey("pingpong"));
 
-        String[] arr = {"농구", "축구", "농구", "야구", "축구"};
-        // 농구: 2, 축구: 2, 야구: 1
+//        String[] arr = {"농구", "축구", "농구", "야구", "축구"};
+//        // 농구: 2, 축구: 2, 야구: 1
+//        Map<String, Integer> myMap = new HashMap<>();
+//        for(String a : arr){
+//            if(myMap.containsKey(a)){
+//                myMap.put(a, myMap.get(a)+1);
+//            }else {
+//                myMap.put(a,1);
+//            }
+//        }
+//        System.out.println(myMap);
+//        //getOrDefault 이용해서 푸는 방법
+//        Map<String, Integer> myMap2 = new HashMap<>();
+//        for (String a : arr) {
+//            myMap2.put(a, myMap2.getOrDefault(a, 0) + 1);
+//        }
+//        System.out.println(myMap2);
+
+        //프로그래머스 - 완주하지 못한 선수
 
     }
 }
