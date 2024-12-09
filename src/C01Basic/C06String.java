@@ -363,10 +363,5 @@ public class C06String {
 //        System.out.println(answer);
 
         //StringBuilder의 사용이 더 성능이 좋음, 사용방법 비교
-        for(int i=0; i<10; i++){
-            System.out.println("hello world");
-        }
-
-
     }
 }

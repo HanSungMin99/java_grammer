@@ -181,8 +181,67 @@ public class C07Array {
 //        Arrays.sort(fruits2);
 //        System.out.println(Arrays.toString(fruits2));
 
-        //프로그래머스-k번째 수
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//        //프로그래머스-k번째 수
+//        int[] array={1, 5, 2, 6, 3, 7, 4};
+//        int[][] commands={{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
+//        int[] answer = new int[commands.length];
+//        for(int i=0; i<commands.length; i++){
+//            int[] temp = new int[commands[i][1]-commands[i][0]+1];
+//            int number=0;
+//            for(int j=commands[i][0]-1; j<commands[i][1];j++){
+//                temp[number] = array[j];
+//                number++;
+//            }
+//            Arrays.sort(temp);
+//            answer[i] = temp[commands[i][2]-1];
+//        }
+//        System.out.println(Arrays.toString(answer));
+//        }
+
+//        //숫자 조합의 합
+//        //모두 각기 다른 숫자의 배열이 있을 때, 만들어질 수 있는 2개의 조합의 합을 출력
+//        //중복 제거는 다른 명령어를 배워야 가능하므로 일단 중복있게 조합만들기
+//        int[] intArr = {10,20,30,40,50,60};
+//        int[] arr1 = new int[intArr.length * intArr.length];
+//        int index = 0;
+//        for (int i = 0; i < intArr.length; i++) {
+//            for (int j = i+1; j < intArr.length; j++) {
+//                int sum = intArr[i] + intArr[j];
+//                arr1 [index] = intArr[i]+intArr[j];
+//                index++;
+//            }
+//        }
+//        System.out.println(Arrays.toString(arr1));
+//        //출력 범위 맞추기
+//        int[] arr2 = new int[index];
+//        for(int i=0; i<index; i++){
+//            arr2 [i] = arr1[i];
+//        }
+//        Arrays.sort(arr2);
+//        System.out.println(Arrays.toString(arr2));
+//        //중복 제거해보기
+//        Arrays.sort(arr2);
+//        int[] arr3 = new int[arr2.length];
+//        int count = 0;
+//        for(int i = 0; i<arr2.length; i++){
+//            if(i==arr2.length-1 || arr2[i] != arr2[i+1]){
+//                    arr3[count] = arr2[i];
+//                    count++;
+//            }
+//        }
+//        System.out.println(Arrays.toString(arr3));
+//
+//        //배열의 복사
+//        //Arrays.copyOf(배열명, length), Arrays.copy0fRange(배열명, start, end)
+//        int[] answer1 = Arrays.copyOf(arr3, count);
+//        int[] answer2 = Arrays.copyOfRange(arr3, 0, count);
+//        System.out.println(Arrays.toString(answer1));
+//        System.out.println(Arrays.toString(answer2));
+
+        //프로그래머스-두 개 뽑아서 더하기
+        int[] numbers = {2, 1, 3, 4, 1};
 
     }
 }
