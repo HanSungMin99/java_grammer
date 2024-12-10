@@ -1,7 +1,9 @@
 package C01Basic;
 
+
+import java.io.*;
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
+
 
 public class C11QueStackDeque {
     public static void main(String[] args) {
@@ -90,7 +92,34 @@ public class C11QueStackDeque {
 //            System.out.println(pq.poll()); //하나꺼낼때마다 log n의 복잡도를 가짐
 //        }//Empty가 아닐 때까지 계속 값을 꺼냄
 
-        //백준 - 최소힙
+//        //백준 - 최소힙
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        Queue<Integer> pq = new PriorityQueue<>();
+//        int count = Integer.parseInt(br.readLine());
+//        StringBuilder sb = new StringBuilder();
+//        for(int i = 0; i<count; i++){
+//            int temp = Integer.parseInt(br.readLine());
+//            if(temp==0){
+//                if(pq.isEmpty()){
+//                    sb.append(0);
+//                    sb.append("\n");
+//                }else{
+//                    sb.append(pq.poll());
+//                    sb.append("\n");
+//                }
+//            }else {
+//                pq.add(temp);
+//            }
+//        }
+//        sb.deleteCharAt(sb.length()-1);
+//        System.out.println(sb);
+
+//        //최대힙인 경우
+//        Queue<Integer> maxPq = new PriorityQueue<>(Comparator.reverseOrder());
+//        maxPq.add(30);
+//        maxPq.add(10);
+//        maxPq.add(20);
+//        System.out.println(maxPq.poll());
 
 
     }
