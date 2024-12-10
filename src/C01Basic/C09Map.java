@@ -69,8 +69,85 @@ public class C09Map {
 //        }
 //        System.out.println(myMap2);
 
-        //프로그래머스 - 완주하지 못한 선수
+//        //프로그래머스 - 완주하지 못한 선수
+//
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//        //프로그래머스 - 의상
+
+//        //LinkedHashMap: 데이터 삽입순서를 보장(유지)
+//        Map<String, Integer> linkedMap = new LinkedHashMap<>();
+//        linkedMap.put("hello5", 1);
+//        linkedMap.put("hello4", 2);
+//        linkedMap.put("hello3", 3);
+//        linkedMap.put("hello2", 4);
+//        linkedMap.put("hello1", 5);
+//        for(String l : linkedMap.keySet()){
+//            System.out.println("KEY값은 "+l);
+//        }
 
 
+//        //TreeMap: key를 통해 데이터를 정렬
+//        Map<String, Integer> treeMap = new TreeMap<>();
+//        treeMap.put("hello5", 1);
+//        treeMap.put("hello4", 2);
+//        treeMap.put("hello3", 3);
+//        treeMap.put("hello2", 4);
+//        treeMap.put("hello1", 5);
+//        for(String l : treeMap.keySet()){
+//            System.out.println("KEY값은 "+l);
+//        }
+
+//        //Hash맵을 사용해서 key로 정렬
+//        Map<String, Integer> myMap = new HashMap<>();
+//        myMap.put("hello5", 1);
+//        myMap.put("hello4", 2);
+//        myMap.put("hello3", 3);
+//        myMap.put("hello2", 4);
+//        myMap.put("hello1", 5);
+//        List<String> myList = new ArrayList<>();
+//        for(String a : myMap.keySet()){
+//            myList.add(a);
+//        }
+//        Collections.sort(myList);
+//        for(String l : myList){
+//            System.out.println("KEY값은 "+ l);
+//            System.out.println("VALUE값은 " + myMap.get(l));
+//        }
+//        System.out.println(myList);
+//
+//        //key값으로 정렬하지 않고 value값으로 정렬하고 싶다면 아래와 같은 방법 이용 가능
+//        Collections.sort(myList, new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//                return o1.compareTo(o2); //오름차순 정렬 o2.compareTo(o1)은 내림차순 정렬
+//            }
+//        });
+//        System.out.println(myList);
+//        Collections.sort(myList, new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//                return myMap.get(o1) - myMap.get(o2); //value값으로 오름차순 정렬, myMap.get(o2) - myMap.get(o1)은 value를 기준으로 내림차순 정렬
+//            }
+//        });
+//        System.out.println(myList);
+
+//        //hashmap출력방법 2가지:
+//        // 1.강화된 for문
+//        Map<String, String> myMap = new HashMap<>();
+//        myMap.put("basketball", "농구");
+//        myMap.put("soccer", "축구");
+//        myMap.put("baseball", "야구");
+//        for(String a : myMap.keySet()){
+//            System.out.println(a);
+//        }
+//        //2.iterator
+//        Iterator<String> myIters = myMap.keySet().iterator();
+//        //next메서드는 데이터를 하나씩 소모시키면서 값을 반환
+//        System.out.println(myIters.next());
+//        //hasNext는 iterator 안에 그 다음값이 있는지 없는지 boolean return
+//        while (myIters.hasNext()){
+//            System.out.println(myIters.next());
+//        }
     }
 }
