@@ -1,7 +1,7 @@
 package C01Basic;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
 
 public class C11QueStackDeque {
     public static void main(String[] args) {
@@ -20,5 +20,78 @@ public class C11QueStackDeque {
 //        System.out.println(myQueue.peek());
 //        System.out.println(myQueue);
 
-     }
+//        //LinkedList와 ArrayList 성능 비교
+//        //중간 위치에 데이터 add 테스트
+//        LinkedList<Integer> list1 = new LinkedList<>();
+//        long startTime = System.currentTimeMillis();
+//        for(int i =0; i<100000; i++){
+//            list1.add(0,10);
+//        }
+//        long endTime = System.currentTimeMillis();
+//        System.out.println("linkedlist 삽입속도 " + (endTime-startTime));
+//
+//        ArrayList<Integer> list2 = new ArrayList<>();
+//        long startTime2 = System.currentTimeMillis();
+//        for(int i =0; i<100000; i++){
+//            list2.add(0,10);
+//        }
+//        long endTime2 = System.currentTimeMillis();
+//        System.out.println("Arraylist 삽입속도 " + (endTime2-startTime2));
+//
+//        //조회속도 비교
+//        //linkedlist조회
+//        long startTime3 = System.currentTimeMillis();
+//        for(int i =0; i<100000; i++){
+//            list1.get(i);
+//        }
+//        long endTime3 = System.currentTimeMillis();
+//        System.out.println("LinkedList 조회속도 " + (endTime3-startTime3));
+//        //ArrayList의 조회속도
+//        long startTime4 = System.currentTimeMillis();
+//        for(int i =0; i<100000; i++){
+//            list2.get(i);
+//        }
+//        long endTime4 = System.currentTimeMillis();
+//        System.out.println("ArrayList 조회속도 " + (endTime4-startTime4));
+
+//        //Queue
+//        Queue<String> myQue = new LinkedList<>();
+//        myQue.add("문서1");
+//        myQue.add("문서2");
+//        myQue.add("문서3");
+//        while (!myQue.isEmpty()){
+//            System.out.println(myQue.poll());
+//        }
+//        //길이제한 큐: ArrayBlockingQueue
+//        Queue<String> blockingQueue = new ArrayBlockingQueue<>(3);
+//        blockingQueue.add("문서1");
+//        blockingQueue.add("문서2");
+//        blockingQueue.add("문서3");
+//        //blockingQueue.add("문서4"); //길이 제한 때문에 에러가 발생한다
+//        //offer: Queue에 여유공간이 있을 때만 add
+//        blockingQueue.offer("문서1");
+//        blockingQueue.offer("문서2");
+//        blockingQueue.offer("문서3");
+//        blockingQueue.offer("문서4"); // 길이 제한이 있어도 에러가 나지 않고, 대신 삽입도 되지 않는다.
+//        System.out.println(blockingQueue);
+
+//        //우선순위 Queue: 데이터를 꺼낼 때 정렬된 데이터 poll
+//        //전체 정렬이 아닌, poll할 때마다 최소값을 보장
+//        //최소값을 찾을 때 성능이 굉장히 좋다.
+//        Queue<Integer> pq = new PriorityQueue<>();
+//        pq.add(30);
+//        pq.add(20);
+//        pq.add(10);
+//        pq.add(40);
+//        pq.add(50);
+//        System.out.println(pq); //이렇게 조회만 하면 정렬이 되어있지 않음
+//        System.out.println(pq.poll()); //그러나 값을 꺼낼 때는 오름차순 정렬된 형태로 데이터를 꺼낸다.
+//        while(!pq.isEmpty()){
+//            System.out.println(pq.poll()); //하나꺼낼때마다 log n의 복잡도를 가짐
+//        }//Empty가 아닐 때까지 계속 값을 꺼냄
+
+        //백준 - 최소힙
+
+
+    }
 }
