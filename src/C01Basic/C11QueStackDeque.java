@@ -1,6 +1,7 @@
 package C01Basic;
 
 
+import javax.management.InstanceNotFoundException;
 import java.io.*;
 import java.util.*;
 
@@ -123,6 +124,42 @@ public class C11QueStackDeque {
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+//        //프로그래머스 - 더 맵게
+//
+//        //stack
+//        Stack<Integer> st = new Stack<>();
+//        st.push(10);
+//        st.push(20);
+//        st.push(30);
+//        System.out.println(st.pop()); //30이 꺼내짐
+//        System.out.println(st); // 30이 꺼내지고 [10,20]만 남아있음을 확인
+//        System.out.println(st.peek()); // 20이 꺼내지지만 데이터 삭제 안되고 그대로 있음
+//        System.out.println(st); //20을 꺼냈지만 [10,20]이 그대로 남아있음을 확인
+//        System.out.println(st.isEmpty()); //Empty가 아니기 때문에 false 나옴
+//
+//        //Empty일 때까지 값을 삭제하면서 값 계속 꺼내기
+//        while(! st.isEmpty()){
+//            System.out.println(st.pop());
+//        }
+//        System.out.println(st);// 다 꺼냈기 때문에 값이 없음을 확인 가능
+
+//        //프로그래머스 - 같은 숫자는 싫어
+//
+//        //Deque: addFirst, addLast, pollFirst, pollLast(pop과 같은 기능)
+//        Deque<Integer> d1 = new ArrayDeque<>();
+//        d1.addLast(10);
+//        d1.addLast(20);
+//        System.out.println(d1);//[10,20]이 출력됨
+//        d1.addFirst(30);
+//        System.out.println(d1);// 30이 맨 앞으로 들어가서 [30,10,20]이 출력됨
+//        System.out.println(d1.peekFirst());//30출력
+//        System.out.println(d1.peekLast());//20출력
+//        System.out.println(d1.pollLast());//20출력하며 데이터 삭제
+//        System.out.println(d1.pollFirst());//30출력하며 데이터 삭제
+//        System.out.println(d1);//pollLast와 pollFirst로 데이터를 꺼내며 출력하여 10만 남아 있음
+//
+//        //프로그래머스 - 올바른 괄호
 
     }
 }
