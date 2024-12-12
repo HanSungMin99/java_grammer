@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class BankService {
+public class BankService_class {
     public static void main(String[] args) {
 //        프로그램은 항상 실행될수 있도록 전체코드를 while(true)처리
 //        서비스번호를 입력하세요. 1.개설 2.조회 3.입금 4.출금 5.송금
