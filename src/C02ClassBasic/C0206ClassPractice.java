@@ -64,4 +64,9 @@ class Account{
     public void setBalance(int balance) {
         this.balance = balance;
     }
+
+    //set balance 하지말고 transfer 사용
+    //public void transfer(Account.yourAccount, int money){
+        //상대계좌객체.balavce = 상대금액 + 보낼금액;
+    //}
 }

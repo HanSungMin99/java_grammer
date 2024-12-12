@@ -30,7 +30,8 @@ public class C0202Person {
         this.email = email;
     }
 
-
+    //생성자: 초기값 → 그 이후에 값이 변경될 경우 setter와 같은 역할을 하는 메서드 필요
+    //예) 회원가입: 생성자, 회원수정: setter 필요, 주문: 생성자, 재고관리:setter필요
 
 
 

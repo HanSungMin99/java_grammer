@@ -36,6 +36,7 @@ public class C0202Class {
         m2.sumAcc(30);
         m2.sumAcc(40);
         System.out.println(m2.total);
+        System.out.println(MyCalculatorInstance.total_count);
 
         //이름세팅, eating()메서드 호출
         C0202Person p1 = new C0202Person();
@@ -64,6 +65,10 @@ class MyCalculator{ //class 앞에 default가 생략됨, default는 이 패키�
 class MyCalculatorInstance { //이것은 원본, 이것을 통해 복제본을 만들 것이다.
     static int total_count = 0;
     int total = 0;
+
+    public MyCalculatorInstance(){
+        total_count +=1;
+    }
 
     void sumAcc(int a) {
         //this는 객체 그 자신을 의미
