@@ -195,3 +195,10 @@ class Post {
         return authorId;
     }
 }
+
+//계층분리가 필요함(spring에서 진행)
+//1. 도메인: Author, Post
+//2. 각종기능: service계층에 들어가야 함
+//3. 레파지토리(저장소) 개념 등장
+//Controller: 사용자와 직접 입력값 받고 하는 것, service: 로직 짜는 것, 레파지토리(저장): 쿼리, db이어지는 것
+//강사님이 보내주신 Board 코드 참조해서 보기
