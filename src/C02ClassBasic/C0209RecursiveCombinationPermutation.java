@@ -68,7 +68,7 @@ public class C0209RecursiveCombinationPermutation {
 //    }
 
     //순열
-        //재귀함수 호출을 통한 조합리스트 만들기
+        //재귀함수 호출을 통한 순열리스트 만들기
         List<Integer> myList = new ArrayList<>();
         myList.add(1);
         myList.add(2);
@@ -87,7 +87,7 @@ public class C0209RecursiveCombinationPermutation {
             answer.add(new ArrayList<>(temp));  // 현재 순열을 결과에 추가
             return;
         }
-        // 재귀적으로 순열을 생성\
+        // 재귀적으로 순열을 생성
             for (int i = 0; i < myList.size(); i++) {//원소가 이미 사용되었으면 넘어감
                 if (!visited[i]) {
                     temp.add(myList.get(i));
