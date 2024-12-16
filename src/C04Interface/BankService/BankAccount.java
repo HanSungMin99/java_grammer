@@ -11,17 +11,18 @@ public class BankAccount {
         this.balance = balance;
     }
 
+    //잔액 업데이트
     public void updateBalance(int balance){
         this.balance = balance;
     }
 
 
     //getter 추가
-
+    //잔액조회
     public int getBalance() {
         return balance;
     }
-
+    //계좌번호 조회
     public String getAccountNumber() {
         return accountNumber;
     }
