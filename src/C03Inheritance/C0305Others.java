@@ -15,7 +15,7 @@ public class C0305Others {
     }
 }
 
-//abstract 메서드가 하나라도 있으면, 반드시 클래스에도 abstract키워드가 붙어야 한다.
+//abstract 메서드가 하나라도 있으면, 반드시 클래스에도 abstract키워드가 붙어야 한다(추상클래스로 만들어야 한다: 객체 생성 안됨, 상속 시 자식쪽에서 무조건 오버라이딩해줘야 한다)
 abstract class AbstractAnimals{
     void makeSound1(){
         System.out.println("동물소리를 냅니다.");
