@@ -104,6 +104,17 @@ public class C0503ComparableComparator {
             System.out.println(Arrays.toString(m));
         }
 
+        //프로그래머스 = 가장 큰 수
+        int[] numbers = {3, 30, 34, 5, 9 };
+        String[] arr = {"3", "30", "34", "5", "9"};
+        //내림차순 정렬의 문제점: 9 5 34 30 3
+        Arrays.sort(arr, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return (o2+o1).compareTo(o1+o2);
+            }
+        });
+        System.out.println(Arrays.toString(arr));
     }
 }
 
