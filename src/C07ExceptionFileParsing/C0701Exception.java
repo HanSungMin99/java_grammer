@@ -49,6 +49,7 @@ public class C0701Exception {
             login2(password);
         }catch (SQLException a){
             a.printStackTrace();
+            System.out.println("에러 메시지: " + a.getMessage()); //예외문구만 따로 떼고 싶을때 getMessage() 사용
         }
 
     }
